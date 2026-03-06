@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VIP Portfolio | Aayan Khan</title>
+        <!-- Tailwind CSS via CDN + custom base styles -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Smooth scroll & custom style -->
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .vip-gradient {
+                background: linear-gradient(145deg, #0b0f1c 0%, #1a1f33 100%);
+            }
+
+            .glass-card {
+                background: rgba(20, 25, 45, 0.7);
+                backdrop-filter: blur(8px);
+                border: 1px solid rgba(255, 215, 0, 0.15);
+            }
+
+            .gold-border {
+                border-color: #c5a028;
+            }
+
+            .gold-text {
+                color: #e4b130;
+            }
+
+            .hover-gold:hover {
+                color: #f5c542;
+                transition: 0.3s;
+            }
+
+            .service-card {
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+
+            .service-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 30px -10px rgba(228, 177, 48, 0.2);
+            }
+        </style>
+    </head>
+
+    <body class="vip-gradient text-gray-200 font-sans antialiased">
+
+        <!-- ======= PREMIUM NAVBAR ======= -->
+        <nav
+            class="glass-card fixed w-full z-50 top-0 left-0 px-6 py-4 flex justify-between items-center border-b gold-border">
+            <div class="text-2xl font-bold tracking-wider gold-text"><span class="text-white">M.</span>Basit <span
+                    class="text-xs align-top ml-1 border border-yellow-500 px-2 py-0.5 rounded-full">VIP</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover-gold">HOME</a>
+                <a href="#services" class="hover-gold">SERVICES</a>
+                <a href="#about" class="hover-gold">ABOUT</a>
+                <a href="#contact" class="hover-gold">CONTACT</a>
+            </div>
+            <a href="#contact"
+                class="border border-yellow-600 text-yellow-300 px-5 py-2 rounded-full text-sm hover:bg-yellow-600 hover:text-black transition">Let's
+                Talk</a>
+        </nav>
+
+        <!-- ======= HERO SECTION (HOME) WITH IMAGE PLACEHOLDER ======= -->
+        <section id="home" class="min-h-screen flex items-center justify-center pt-16 px-4">
+            <div class="max-w-6xl mx-auto text-center md:text-left md:flex items-center gap-12">
+                <div class="flex-1">
+                    <p class="gold-text font-semibold tracking-widest text-sm mb-4">✦ WELCOME TO THE FUTURE ✦</p>
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight">I'm <span class="gold-text">Muhammad
+                            Basit</span><br>Digital Architect & Visionary</h1>
+                    <p class="text-gray-400 text-lg my-6 max-w-xl">Crafting high-end web solutions, luxury brand
+                        identities, and AI-driven innovations. Your vision deserves a VIP treatment.</p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="#services"
+                            class="bg-yellow-600 text-black font-semibold px-8 py-3 rounded-full hover:bg-yellow-500 transition shadow-lg">Explore
+                            Services</a>
+                        <a href="#contact"
+                            class="border border-yellow-600/50 text-yellow-300 px-8 py-3 rounded-full hover:bg-yellow-600/10 transition">Book
+                            a Call</a>
+                    </div>
+                    <!-- social media icons -->
+                    <div class="flex mt-10 gap-4 text-2xl gold-text">
+                        <i class="fab fa-behance"></i>
+                        <i class="fab fa-dribbble"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+                <div class="flex-1 mt-12 md:mt-0 flex justify-center">
+                    <!-- ===== IMAGE WALI JAGAH - CROWN HATAYA ===== -->
+                    <!-- Ab yahan aap apni image laga sakte hain -->
+                    <div
+                        class="w-72 h-72 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-yellow-500/30 to-purple-800/30 flex items-center justify-center border-4 border-yellow-500/50 shadow-2xl overflow-hidden">
+                        -->
+                        <img src="Web Developer.png" alt="Muhammad Basit - Profile" class="w-full h-full object-cover">
+                        <!-- upar wali image sample hai, ise apni image se replace kar dein -->
+                    </div>
+                    <!-- ===== IMAGE SECTION END ===== -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= SERVICES SECTION (VIP STYLE) ======= -->
+        <section id="services" class="py-24 px-4 max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="gold-text text-sm tracking-[0.3em]">✦ WHAT I OFFER ✦</p>
+                <h2 class="text-4xl md:text-5xl font-bold mt-2">Premium <span class="gold-text">Services</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mt-4">Cutting-edge solutions tailored for brands that refuse
+                    to settle.</p>
+            </div>
+
+            <!-- service grid - web dev, graphic design, AI, etc. -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 1. Web Development -->
+                <div class="glass-card p-8 rounded-2xl service-card">
+                    <div class="text-5xl gold-text mb-5"><i class="fas fa-code"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3">Web Development</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Responsive, high-performance websites, custom web
+                        apps, e‑commerce, and CMS. Built with modern stacks (React, Vue, Laravel).</p>
+                    <span class="inline-block mt-4 gold-text text-xs tracking-widest">50+ projects</span>
+                </div>
+                <!-- 2. Graphic Designing -->
+                <div class="glass-card p-8 rounded-2xl service-card">
+                    <div class="text-5xl gold-text mb-5"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3">Graphic Designing</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Luxury branding, logo design, social media visuals,
+                        print materials, and motion graphics. Every pixel speaks elegance.</p>
+                    <span class="inline-block mt-4 gold-text text-xs tracking-widest">200+ designs</span>
+                </div>
+                <!-- 3. Artificial Intelligence -->
+                <div class="glass-card p-8 rounded-2xl service-card">
+                    <div class="text-5xl gold-text mb-5"><i class="fas fa-robot"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3">Artificial Intelligence</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Custom AI models, chatbots, data analytics,
+                        computer vision, and predictive systems. Turn data into gold.</p>
+                    <span class="inline-block mt-4 gold-text text-xs tracking-widest">AI integration</span>
+                </div>
+                <!-- 4. Digital Marketing -->
+                <div class="glass-card p-8 rounded-2xl service-card">
+                    <div class="text-5xl gold-text mb-5"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3">Digital Marketing</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">SEO, influencer strategy, ad campaigns, and
+                        analytics. We boost your digital presence.</p>
+                </div>
+                <!-- 5. UI/UX Design -->
+                <div class="glass-card p-8 rounded-2xl service-card">
+                    <div class="text-5xl gold-text mb-5"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">User-centric, beautiful interfaces for apps & web.
+                        Wireframing to prototype.</p>
+                </div>
+                <!-- 6. Mobile App Development -->
+                <div class="glass-card p-8 rounded-2xl service-card">
+                    <div class="text-5xl gold-text mb-5"><i class="fas fa-crown"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3">App Development</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Cross-platform and native apps (iOS/Android) with
+                        sleek performance.</p>
+                </div>
+                <!-- 7. AI + Automation -->
+                <div class="glass-card p-8 rounded-2xl service-card">
+                    <div class="text-5xl gold-text mb-5"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3">AI Automation</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Workflow automation, custom GPTs, intelligent
+                        document processing.</p>
+                </div>
+                <!-- 8. Brand Strategy -->
+                <div class="glass-card p-8 rounded-2xl service-card">
+                    <div class="text-5xl gold-text mb-5"><i class="fas fa-gem"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3">Brand Strategy</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Luxury brand consulting, identity design, and
+                        storytelling.</p>
+                </div>
+                <!-- 9. 3D & Motion -->
+                <div class="glass-card p-8 rounded-2xl service-card">
+                    <div class="text-5xl gold-text mb-5"><i class="fas fa-cube"></i></div>
+                    <h3 class="text-2xl font-semibold mb-3">3D & Motion</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">3D modelling, product visualisation, explainer
+                        videos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= SHORT ABOUT ======= -->
+        <section id="about" class="py-20 px-4 max-w-5xl mx-auto border-t border-yellow-900/30">
+            <div class="glass-card p-10 rounded-3xl flex flex-col md:flex-row gap-8 items-center">
+                <div
+                    class="w-40 h-40 rounded-full bg-gradient-to-b from-yellow-700 to-gray-900 flex items-center justify-center border-4 border-yellow-600 overflow-hidden">
+                    <!-- About section mein bhi image laga sakte hain chahein to -->
+                    <img src="Web Developer.png" alt="Aayan" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold gold-text">Muhammad Basit</h3>
+                    <p class="text-gray-300 mt-2 leading-relaxed">A visionary developer & designer with 8+ years of
+                        experience crafting digital masterpieces for global clients. My work merges code, art, and
+                        intelligence. I've collaborated with Fortune 500 companies and luxury startups. Based in Dubai &
+                        NYC (remote worldwide).</p>
+                    <div class="flex flex-wrap gap-4 mt-5 text-sm gold-text">
+                        <span><i class="fas fa-check-circle mr-1"></i> 300+ projects</span>
+                        <span><i class="fas fa-check-circle mr-1"></i> 45+ global clients</span>
+                        <span><i class="fas fa-check-circle mr-1"></i> VIP support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= CONTACT + FORMSPREE FORM ======= -->
+        <section id="contact" class="py-20 px-4 max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <p class="gold-text text-sm tracking-[0.2em]">✦ GET IN TOUCH ✦</p>
+                <h2 class="text-4xl md:text-5xl font-bold mt-2">Let's create something <span
+                        class="gold-text">legendary</span></h2>
+            </div>
+
+            <div class="glass-card rounded-3xl p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- contact details (left) -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 gold-text">Contact</h3>
+                    <div class="space-y-5">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-yellow-900/30 flex items-center justify-center gold-text text-xl">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div><span class="block text-sm text-gray-400">Phone (WhatsApp)</span><span
+                                    class="font-medium">+92 327 4916727</span></div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-yellow-900/30 flex items-center justify-center gold-text text-xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div><span class="block text-sm text-gray-400">Email</span><span
+                                    class="font-medium">raisahab2773@gmail.com</span></div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-yellow-900/30 flex items-center justify-center gold-text text-xl">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div><span class="block text-sm text-gray-400">Direct WhatsApp</span><span
+                                    class="font-medium">+92 327 4916727</span></div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-yellow-900/30 flex items-center justify-center gold-text text-xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div><span class="block text-sm text-gray-400">Studio location</span><span
+                                    class="font-medium">Okara / Punjab Pakistan (remote)</span></div>
+                        </div>
+                    </div>
+                    <!-- social media quick links -->
+                    <div class="flex gap-5 mt-8 text-2xl gold-text">
+                        <i class="fab fa-instagram hover:text-white cursor-pointer"></i>
+                        <i class="fab fa-behance hover:text-white cursor-pointer"></i>
+                        <i class="fab fa-linkedin hover:text-white cursor-pointer"></i>
+                        <i class="fab fa-x-twitter hover:text-white cursor-pointer"></i>
+                    </div>
+                </div>
+
+                <!-- FORMSPREE FORM (right) -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 gold-text">Send a message</h3>
+                    <!-- ⚠️ IMPORTANT: Apna Formspree endpoint yahan lagayein -->
+                    <form action="https://formspree.io/f/mpqyavpe" method="POST" class="space-y-4">
+                        <input type="text" name="name" placeholder="Your name"
+                            class="w-full p-3 rounded-xl bg-black/40 border border-gray-700 focus:border-yellow-600 outline-none text-white"
+                            required>
+                        <input type="email" name="email" placeholder="Email address"
+                            class="w-full p-3 rounded-xl bg-black/40 border border-gray-700 focus:border-yellow-600 outline-none text-white"
+                            required>
+                        <input type="text" name="subject" placeholder="Subject (e.g. Web Development inquiry)"
+                            class="w-full p-3 rounded-xl bg-black/40 border border-gray-700 focus:border-yellow-600 outline-none text-white">
+                        <textarea name="message" rows="4" placeholder="Tell me about your project..."
+                            class="w-full p-3 rounded-xl bg-black/40 border border-gray-700 focus:border-yellow-600 outline-none text-white"
+                            required></textarea>
+                        <!-- honeypot spam protection -->
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit"
+                            class="w-full bg-yellow-700 hover:bg-yellow-600 text-white font-semibold py-3 rounded-xl transition text-lg">Send
+                            Inquiry <i class="fas fa-paper-plane ml-2"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= FOOTER ======= -->
+        <footer class="border-t border-yellow-900/30 py-8 text-center text-gray-500 text-sm">
+            <p>© 2026 Muhammad Basit – All rights reserved. <span class="gold-text">✦ web • design • ✦</span></p>
+        </footer>
+    </body>
+
+    </html>
+</body>
+
+</html>
